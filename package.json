@@ -1,11 +1,27 @@
 {
   "name": "vue-simple-switch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue Simple Switch",
-  "author": "oper-88@mail.ru",
-  "main": "dist/lib/vue-simple-switch.min.js",
+  "author": "Alexandr Zhytnyk <oper-88@mail.ru>",
   "private": false,
   "license": "MIT",
+  "main": "dist/lib/vue-simple-switch.min.js",
+  "unpkg": "dist/lib/vue-simple-switch.min.js",
+  "jsnext:main": "dist/lib/vue-simple-switch.min.js",
+  "files": [
+    "dist",
+    "src",
+    "lib"
+  ],
+  "jspm": {
+    "main": "dist/lib/vue-simple-switch.min.js",
+    "registry": "npm",
+    "format": "esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OperKH/vue-simple-switch.git"
+  },
   "scripts": {
     "prepublishOnly": "npm run build",
     "dev": "npm-run-all --parallel dev:lib dev:docs",
